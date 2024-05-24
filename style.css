@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -15,8 +16,7 @@ body {
 header {
   background: #333;
   color: #fff;
-  padding-top: 30px;
-  min-height: 70px;
+  padding: 10px 0;
   border-bottom: #e8491d 3px solid;
 }
 
@@ -35,11 +35,13 @@ header ul {
 header li {
   float: left;
   display: inline;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
 }
 
 header .logo {
   float: left;
+  width: 50px; /* Smaller logo size */
+  height: auto;
 }
 
 header nav {
@@ -67,4 +69,21 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ccc;
+  }
+
+  header {
+    background: #1f1f1f;
+    border-bottom: #e8491d 3px solid;
+  }
+
+  footer {
+    background: #1f1f1f;
+  }
 }
